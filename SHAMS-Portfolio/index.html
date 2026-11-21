@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160b12">
+  <meta name="description" content="شمس كنعان — طالبة هندسة برمجيات، شغوفة بالبرمجة وتطوير الويب وتجارب المستخدم.">
+  <title>شمس كنعان | معرض الأعمال</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Tajawal:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styley.css">
+  <style>
+    .visual {
+      position: relative;
+    }
+
+    .visual .hero-photo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 34%;
+      height: auto;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .float-label {
+      z-index: 3;
+
+      /* ===== SHAMS IMAGE BACKGROUNDS ===== */
+
+      /* Hero */
+      #home {
+        position: relative;
+        isolation: isolate;
+        background:
+          linear-gradient(rgba(22, 11, 18, .65), rgba(22, 11, 18, .82)),
+          url("img/hero-bg.png") center/cover no-repeat;
+      }
+
+      /* Skills */
+      #skills {
+        position: relative;
+        isolation: isolate;
+        background:
+          linear-gradient(rgba(22, 11, 18, .72), rgba(22, 11, 18, .85)),
+          url("img/skills-bg.png") center/cover no-repeat;
+      }
+
+      /* Contact */
+      #contact {
+        position: relative;
+        isolation: isolate;
+        background:
+          linear-gradient(rgba(22, 11, 18, .68), rgba(22, 11, 18, .82)),
+          url("img/contact-bg.png") center/cover no-repeat;
+      }
+
+      /* Keep content above backgrounds */
+      #home .container,
+      #skills .container,
+      #contact .container {
+        position: relative;
+        z-index: 1;
+
+      }
+  </style>
+</head>
+
+<body>
+  <div class="ambient"></div>
+  <div class="grid-bg"></div>
+  <div id="progress"></div>
+
+  <header id="header">
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Shams Kanaan home"><span class="brand-mark">ش</span><span>SHAMS<span
+            class="brand-dot">.</span></span></a>
+      <nav id="navigation" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="#about" data-ar="نبذة عني" data-en="About">نبذة عني</a></li>
+          <li><a href="#skills" data-ar="مهاراتي" data-en="Skills">مهاراتي</a></li>
+          <li><a href="#journey" data-ar="رحلتي" data-en="Journey">رحلتي</a></li>
+          <li><a href="#projects" data-ar="مشاريعي" data-en="Projects">مشاريعي</a></li>
+          <li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <button class="icon-btn" id="language" aria-label="Switch language">EN</button>
+        <button class="icon-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow" data-ar="شغف بالبرمجة. وإبداع في التصميم."
+            data-en="Passionate about code. Inspired by design.">شغف بالبرمجة. وإبداع في التصميم.</div>
+          <h1 class="hero-name"><strong>SHAMS</strong><span>KANAAN.</span></h1>
+          <div class="role" data-ar="طالبة هندسة برمجيات" data-en="Software Engineering Student">طالبة هندسة برمجيات
+          </div>
+          <p class="hero-copy"
+            data-ar="أحوّل الأفكار إلى تجارب رقمية. مطوّرة برمجيات طموحة، وشغوفة بالمعرفة. أبتكر بهدف، وأتعلّم وأبني خطوةً برمجية تلو الأخرى."
+            data-en="I turn ideas into digital experiences. An ambitious software developer, passionate about knowledge. I create with purpose, learning and building one step at a time.">
+            أحوّل الأفكار إلى تجارب رقمية. مطوّرة برمجيات طموحة، وشغوفة بالمعرفة. أبتكر بهدف، وأتعلّم وأبني خطوةً برمجية
+            تلو الأخرى.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects"><span data-ar="اكتشف أعمالي" data-en="Explore my work">اكتشف
+                أعمالي</span><span class="arrow">↗</span></a>
+            <a class="btn" href="#contact"><span data-ar="تواصل معي" data-en="Contact me">تواصل معي</span><span
+                class="arrow">↙</span></a>
+          </div>
+          <div class="hero-meta">
+            <span>✦ <b data-ar="22 سنة" data-en="22 years old">22 سنة</b></span>
+            <span>✦ <b data-ar="فلسطينية" data-en="Palestinian">فلسطينية</b></span>
+            <span>✦ <b data-ar="هندسة البرمجيات" data-en="Software Engineering">هندسة البرمجيات</b></span>
+          </div>
+        </div>
+        <div class="visual reveal" aria-label="تصميم تجريدي بلون دم الغزال">
+          <div class="art-orbit"></div>
+          <div class="art-orbit two"></div>
+          <div class="abstract"></div>
+          <svg class="hero-photo" viewBox="0 0 298 487" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="شمس كنعان">
+            <path fill="#1b0a12" fill-rule="evenodd"
+              d="M180 4 152 2 135 4 120 8 105 15 95 22 86 31 79 41 73 53 68 68 66 80 67 91 65 99 51 128 47 140 43 160 39 197 39 246 42 257 42 266 34 276 14 293 6 307 3 318 2 331 6 350 19 374 32 410 40 427 74 472 85 482 94 485 165 473 205 464 244 451 263 441 272 433 279 421 282 410 288 367 295 339 296 307 293 295 284 279 279 274 267 266 264 243 261 236 257 232 257 210 252 177 253 172 259 161 259 152 252 138 251 101 248 82 242 60 231 38 215 20 201 11ZM37 310 39 311 41 325 48 352 59 382 71 406 81 421 93 435 92 437 83 430 69 414 57 395 51 382 43 359 39 342 36 319ZM47 294 48 293 65 327 84 354 102 372 124 387 150 397 168 400 197 400 218 396 221 397 213 401 195 405 164 406 142 402 120 393 96 376 75 353 57 323 51 309ZM266 280 268 288 268 322 264 357 255 391 247 408 242 414 241 411 249 391 257 355 262 315 264 281ZM246 248 248 259 247 274 244 289 239 304 230 322 220 337 202 357 199 358 198 357 219 327 234 297 242 271 244 260 244 249ZM57 209 60 213 71 247 81 270 92 291 103 308 112 319 126 332 135 338 146 343 157 346 162 346 163 347 162 349 147 348 131 342 115 331 98 313 81 286 69 259 59 227 56 213ZM246 160 247 167 245 183 242 195 233 215 222 231 203 250 186 261 185 259 210 235 228 209 239 183 243 167 243 161ZM65 140 67 141 70 163 78 193 85 211 94 229 109 251 124 267 141 280 140 282 132 278 118 268 100 250 87 231 76 208 68 181 64 151 64 141ZM150 48 168 48 178 51 190 58 198 66 203 73 208 84 214 106 228 141 230 154 230 175 228 187 224 200 218 212 210 223 199 234 185 245 170 254 162 257 155 257 144 252 131 244 110 226 102 216 93 199 89 185 87 171 88 148 90 139 103 107 109 85 115 72 122 63 130 56 137 52Z" />
+          </svg>
+          <div class="float-label one" data-ar="أتعلم. أبني. أتطور." data-en="Learn. Build. Evolve.">أتعلم. أبني. أتطور.
+          </div>
+          <div class="float-label two" data-ar="Software Engineering" data-en="Software Engineering">Software
+            Engineering</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">01 / ABOUT ME</div>
+          <h2 data-ar="نبذة <span>قصيرة</span> عني." data-en="A little <span>about</span> me.">نبذة <span>قصيرة</span>
+            عني.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="panel reveal">
+            <p class="about-text"
+              data-ar="مرحباً، أنا <strong>شمس كنعان</strong> — شغوفة بالمعرفة وبناء تجارب رقمية ذات معنى. أمتلك شغفاً بعالم التكنولوجيا والبرمجة وتطوير التطبيقات. أهتم بتطوير مواقع الويب وتصميم واجهات المستخدم وبناء الحلول الرقمية، وأسعى إلى تطوير قدراتي التقنية باستمرار واكتساب الخبرات العملية، وتحويل الأفكار إلى مشاريع إبداعية وواقعية."
+              data-en="Hello, I'm <strong>Shams Kanaan</strong> — passionate about knowledge and building meaningful digital experiences. I am interested in technology, programming and application development. I focus on web development, user interface design and digital solutions, while continuously developing my technical abilities and practical experience.">
+              مرحباً، أنا <strong>شمس كنعان</strong> — شغوفة بالمعرفة وبناء تجارب رقمية ذات معنى. أمتلك شغفاً بعالم
+              التكنولوجيا والبرمجة وتطوير التطبيقات. أهتم بتطوير مواقع الويب وتصميم واجهات المستخدم وبناء الحلول
+              الرقمية، وأسعى إلى تطوير قدراتي التقنية باستمرار واكتساب الخبرات العملية، وتحويل الأفكار إلى مشاريع
+              إبداعية وواقعية.</p>
+            <div class="info-grid">
+              <div class="info"><small data-ar="العمر" data-en="Age">العمر</small><b data-ar="22 سنة"
+                  data-en="22 years">22 سنة</b></div>
+              <div class="info"><small data-ar="الجنسية" data-en="Nationality">الجنسية</small><b data-ar="فلسطينية"
+                  data-en="Palestinian">فلسطينية</b></div>
+              <div class="info"><small data-ar="التخصص" data-en="Major">التخصص</small><b data-ar="هندسة البرمجيات"
+                  data-en="Software Engineering">هندسة البرمجيات</b></div>
+            </div>
+          </article>
+          <aside class="panel about-side reveal">
+            <div class="quote-mark">“</div>
+            <p class="quote"
+              data-ar="أحوّل الأفكار إلى <span>تجارب رقمية</span>، وأؤمن أن كل مشروع يبدأ بفكرة تستحق أن ترى النور."
+              data-en="I turn ideas into <span>digital experiences</span>, believing every project begins with an idea worth bringing to life.">
+              أحوّل الأفكار إلى <span>تجارب رقمية</span>، وأؤمن أن كل مشروع يبدأ بفكرة تستحق أن ترى النور.</p>
+            <p class="side-note" data-ar="أتعلم، أبني، وأتطور — خطوة بعد خطوة."
+              data-en="Learning, building and growing — one step at a time.">أتعلم، أبني، وأتطور — خطوة بعد خطوة.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">02 / MY TOOLKIT</div>
+          <h2 data-ar="مهارات تحوّل الأفكار <span>إلى واقع.</span>"
+            data-en="Skills that turn ideas <span>into reality.</span>">مهارات تحوّل الأفكار <span>إلى واقع.</span></h2>
+          <p data-ar="مجموعة من التقنيات والمبادئ التي تشكّل طريقة عملي."
+            data-en="A growing set of technologies and principles that shape the way I work.">مجموعة من التقنيات
+            والمبادئ التي تشكّل طريقة عملي.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">5</span><span class="skill-index">01</span></div>
+            <div>
+              <h3>HTML5</h3><small data-ar="بناء صفحات الويب" data-en="Web page structure">بناء صفحات الويب</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">CSS</span><span class="skill-index">02</span></div>
+            <div>
+              <h3>CSS3</h3><small data-ar="تنسيق وتصميم الواجهات" data-en="Interface styling">تنسيق وتصميم
+                الواجهات</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">☕</span><span class="skill-index">03</span></div>
+            <div>
+              <h3>Java</h3><small data-ar="البرمجة وحل المشكلات" data-en="Programming & problem solving">البرمجة وحل
+                المشكلات</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">JS</span><span class="skill-index">04</span></div>
+            <div>
+              <h3>JavaScript</h3><small data-ar="تطوير الواجهات التفاعلية" data-en="Interactive interfaces">تطوير
+                الواجهات التفاعلية</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">UI</span><span class="skill-index">05</span></div>
+            <div>
+              <h3 data-ar="تطوير الواجهات الأمامية" data-en="Front-End Development">تطوير الواجهات الأمامية</h3><small
+                data-ar="بناء واجهات واضحة" data-en="Building clear interfaces">بناء واجهات واضحة</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">OOP</span><span class="skill-index">06</span></div>
+            <div>
+              <h3 data-ar="البرمجة كائنية التوجه" data-en="Object-Oriented Programming">البرمجة كائنية التوجه</h3><small
+                data-ar="مبادئ البرمجة" data-en="Programming principles">مبادئ البرمجة</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">WEB</span><span class="skill-index">07</span></div>
+            <div>
+              <h3 data-ar="تصميم الويب المتجاوب" data-en="Responsive Web Design">تصميم الويب المتجاوب</h3><small
+                data-ar="تجربة عبر أحجام الشاشات" data-en="Across screen sizes">تجربة عبر أحجام الشاشات</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">UX</span><span class="skill-index">08</span></div>
+            <div>
+              <h3 data-ar="أساسيات تجربة المستخدم" data-en="UX Fundamentals">أساسيات تجربة المستخدم</h3><small
+                data-ar="تصميم يراعي المستخدم" data-en="User-centered design">تصميم يراعي المستخدم</small>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top"><span class="skill-icon">✦</span><span class="skill-index">09</span></div>
+            <div>
+              <h3 data-ar="حل المشكلات" data-en="Problem Solving">حل المشكلات</h3><small
+                data-ar="تحليل المشكلات وبناء الحلول" data-en="Analyzing and solving problems">تحليل المشكلات وبناء
+                الحلول</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">03 / THE JOURNEY</div>
+          <h2 data-ar="الرحلة <span>حتى الآن.</span>" data-en="The journey <span>so far.</span>">الرحلة <span>حتى
+              الآن.</span></h2>
+          <p data-ar="الخبرات العملية والأكاديمية." data-en="Practical and academic experience.">الخبرات العملية
+            والأكاديمية.</p>
+        </div>
+        <div class="timeline">
+          <article class="milestone reveal">
+            <div class="milestone-card">
+              <div class="milestone-meta"><span data-ar="المشاريع البرمجية" data-en="Programming Projects">المشاريع
+                  البرمجية</span><span>01</span></div>
+              <h3 data-ar="تحويل المفاهيم إلى أكواد" data-en="Turning concepts into code">تحويل المفاهيم إلى أكواد</h3>
+              <p data-ar="تطبيق مفاهيم هندسة البرمجيات من خلال المشاريع الأكاديمية والتخطيط المدروس والتطوير المستمر."
+                data-en="Applying software engineering concepts through academic projects, thoughtful planning and continuous development.">
+                تطبيق مفاهيم هندسة البرمجيات من خلال المشاريع الأكاديمية والتخطيط المدروس والتطوير المستمر.</p>
+            </div>
+          </article>
+          <article class="milestone reveal">
+            <div class="milestone-card">
+              <div class="milestone-meta"><span data-ar="تطوير الواجهات الأمامية" data-en="Front-End Development">تطوير
+                  الواجهات الأمامية</span><span>02</span></div>
+              <h3 data-ar="التصميم للويب" data-en="Designing for the web">التصميم للويب</h3>
+              <p data-ar="تصميم وتطوير صفحات الويب مع التركيز على وضوح الواجهات والتصميم المتجاوب وتجربة مستخدم مدروسة."
+                data-en="Designing and developing web pages with a focus on clear interfaces, responsive design and thoughtful user experience.">
+                تصميم وتطوير صفحات الويب مع التركيز على وضوح الواجهات والتصميم المتجاوب وتجربة مستخدم مدروسة.</p>
+            </div>
+          </article>
+          <article class="milestone reveal">
+            <div class="milestone-card">
+              <div class="milestone-meta"><span>Java <span data-ar="وحل المشكلات" data-en="& Problem Solving">وحل
+                    المشكلات</span></span><span>03</span></div>
+              <h3 data-ar="بناء أساس تقني أقوى" data-en="Building a stronger technical foundation">بناء أساس تقني أقوى
+              </h3>
+              <p data-ar="تطبيق Java والبرمجة كائنية التوجه وتحليل المشكلات والتعلم المستمر لبناء حلول برمجية أفضل."
+                data-en="Applying Java, object-oriented programming, problem analysis and continuous learning to build better software solutions.">
+                تطبيق Java والبرمجة كائنية التوجه وتحليل المشكلات والتعلم المستمر لبناء حلول برمجية أفضل.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">04 / SELECTED WORK</div>
+          <h2 data-ar="أفكار تتحول إلى <span>مشاريع حقيقية.</span>"
+            data-en="Ideas becoming <span>real projects.</span>">أفكار تتحول إلى <span>مشاريع حقيقية.</span></h2>
+          <p data-ar="حلول مدروسة، تعلم عملي، ومساحة للأعمال القادمة."
+            data-en="Thoughtful work, practical learning and room for what's next.">حلول مدروسة، تعلم عملي، ومساحة
+            للأعمال القادمة.</p>
+        </div>
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-art">
+              <div class="symbol">&lt;/&gt;</div>
+            </div>
+            <div class="project-body"><span class="project-number">PROJECT / 01</span>
+              <h3 data-ar="البرمجيات وJava" data-en="Software & Java">البرمجيات وJava</h3>
+              <p data-ar="مساحة مخصصة لمشروع مستقبلي." data-en="A dedicated space for a future project.">مساحة مخصصة
+                لمشروع مستقبلي.</p><span class="project-status" data-ar="لم يُنشر بعد" data-en="Coming soon">لم يُنشر
+                بعد</span>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art">
+              <div class="symbol">✧</div>
+            </div>
+            <div class="project-body"><span class="project-number">PROJECT / 02</span>
+              <h3 data-ar="تصميم الواجهات" data-en="Interface Design">تصميم الواجهات</h3>
+              <p data-ar="مساحة مخصصة لمشروع مستقبلي." data-en="A dedicated space for a future project.">مساحة مخصصة
+                لمشروع مستقبلي.</p><span class="project-status" data-ar="لم يُنشر بعد" data-en="Coming soon">لم يُنشر
+                بعد</span>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-art">
+              <div class="symbol">⌘</div>
+            </div>
+            <div class="project-body"><span class="project-number">PROJECT / 03</span>
+              <h3 data-ar="تطوير الويب" data-en="Web Development">تطوير الويب</h3>
+              <p data-ar="مساحة مخصصة لمشروع مستقبلي." data-en="A dedicated space for a future project.">مساحة مخصصة
+                لمشروع مستقبلي.</p><span class="project-status" data-ar="لم يُنشر بعد" data-en="Coming soon">لم يُنشر
+                بعد</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-head reveal">
+          <div class="section-kicker">05 / GET IN TOUCH</div>
+          <h2 data-ar="الأشياء العظيمة تبدأ <span>بمرحباً.</span>"
+            data-en="Great things start with <span>hello.</span>">الأشياء العظيمة تبدأ <span>بمرحباً.</span></h2>
+          <p data-ar="لديك فكرة أو فرصة أو ترغب في التواصل؟ يسعدني أن أسمع منك."
+            data-en="Have an idea, an opportunity, or just want to connect? I'd be happy to hear from you.">لديك فكرة أو
+            فرصة أو ترغب في التواصل؟ يسعدني أن أسمع منك.</p>
+        </div>
+        <div class="contact-wrap">
+          <div class="contact-card reveal">
+            <div class="contact-row">
+              <div class="contact-label"><span class="contact-icon">⌕</span>
+                <div><small data-ar="GitHub" data-en="GitHub">GitHub</small><b>GitHub</b></div>
+              </div><span class="contact-value" data-ar="قريباً" data-en="Coming soon">قريباً</span>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label"><span class="contact-icon">in</span>
+                <div><small>LinkedIn</small><b>LinkedIn</b></div>
+              </div><span class="contact-value" data-ar="قريباً" data-en="Coming soon">قريباً</span>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label"><span class="contact-icon">✉</span>
+                <div><small data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</small><b
+                    data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</b></div>
+              </div><span class="contact-value" data-ar="قريباً" data-en="Coming soon">قريباً</span>
+            </div>
+          </div>
+          <div class="contact-card whatsapp-box reveal">
+            <span class="contact-icon">◉</span>
+            <h3 data-ar="تواصلي عبر واتساب" data-en="Connect on WhatsApp">تواصلي عبر واتساب</h3>
+            <p data-ar="يسعدني استقبال رسالتك والتواصل معك." data-en="I'd be glad to receive your message and connect.">
+              يسعدني استقبال رسالتك والتواصل معك.</p>
+            <div class="phone">0553349235</div>
+            <a class="btn primary" href="https://wa.me/966553349235" target="_blank" rel="noopener"><span
+                data-ar="تواصل عبر واتساب" data-en="Message on WhatsApp">تواصل عبر واتساب</span><span
+                class="arrow">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">SHAMS KANAAN<span class="brand-dot">.</span></div>
+      <p data-ar="شمس كنعان —  مهندسة برمجيات" data-en="Shams Kanaan — Software Engineering Student">شمس كنعان —
+        مهندسة برمجيات</p>
+    </div>
+  </footer>
+  <button id="toTop" aria-label="العودة للأعلى">↑</button>
+
+  <script>
+    const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+    let currentLang = "ar";
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      $$("[data-ar][data-en]").forEach(el => {
+        const value = el.dataset[lang];
+        if (value.includes("<span>") || value.includes("<strong>")) el.innerHTML = value;
+        else el.textContent = value;
+      });
+      $("#language").textContent = lang === "ar" ? "EN" : "عربي";
+      $("#menuBtn").setAttribute("aria-label", lang === "ar" ? "فتح القائمة" : "Open menu");
+      try { localStorage.setItem("shams-language", lang) } catch (e) { }
+    }
+    $("#language").addEventListener("click", () => setLanguage(currentLang === "ar" ? "en" : "ar"));
+    try { setLanguage(localStorage.getItem("shams-language") || "ar") } catch (e) { setLanguage("ar") }
+
+    $("#menuBtn").addEventListener("click", () => {
+      $("#navigation").classList.toggle("open");
+      $("#menuBtn").textContent = $("#navigation").classList.contains("open") ? "×" : "☰";
+    });
+    $$("#navigation a").forEach(a => a.addEventListener("click", () => {
+      $("#navigation").classList.remove("open"); $("#menuBtn").textContent = "☰";
+    }));
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add("visible"); revealObserver.unobserve(entry.target) }
+      });
+    }, { threshold: .12 });
+    $$(".reveal").forEach(el => revealObserver.observe(el));
+
+    const sections = $$("main section[id]");
+    const navLinks = $$("#navigation a");
+    function onScroll() {
+      const scrollTop = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      $("#progress").style.width = (max > 0 ? scrollTop / max * 100 : 0) + "%";
+      $("#header").classList.toggle("scrolled", scrollTop > 25);
+      $("#toTop").classList.toggle("show", scrollTop > 500);
+      let active = "home";
+      sections.forEach(section => { if (scrollTop >= section.offsetTop - 180) active = section.id });
+      navLinks.forEach(link => link.classList.toggle("active", link.getAttribute("href") === "#" + active));
+    }
+    window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+    $("#toTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  </script>
+</body>
+
+</html>
